@@ -19,13 +19,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'api_struct'
+  spec.add_dependency 'uploadcare-api_struct'
   spec.add_dependency 'dry-configurable'
 
-  spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rspec_junit_formatter", "~> 0.4.1"
-  spec.add_development_dependency "webmock", "~> 3.7.6"
-  spec.add_development_dependency "dotenv", "~> 2.7.5"
+  spec.add_development_dependency "bundler", "~> 2.4.19"
+  spec.add_development_dependency "rake", "~> 13.0.6"
+  spec.add_development_dependency "rspec", "~> 3.12"
+  spec.add_development_dependency "rspec_junit_formatter", "~> 0.6.0"
+  spec.add_development_dependency "webmock", "~> 3.19.0"
+  spec.add_development_dependency "dotenv", "~> 2.8.1"
 end
